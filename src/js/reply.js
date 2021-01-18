@@ -1,8 +1,9 @@
-function reply(body, response) {
+function reply(body, context) {
     var replyData = {
         type: "raw",
-        body: body
+        body: body + " " + JSON.stringify(context)
     };    
+    var response = context.response;
     response.replies = response.replies || [];
     response.replies.push(replyData);
 }
@@ -23,7 +24,7 @@ function addAction(action, context) {
         }
     }
     
-    return reply({items: [{command: command}]}, context.response);
+    return reply({items: [{command: command}]}, context);
 }
 
 
@@ -42,5 +43,5 @@ function addSuggestions(suggestions, context) {
         );
     });
     
-    reply({"suggestions": {"buttons": buttons}}, context.response);
+    reply({"suggestions": {"buttons": buttons}}, context);
 }
