@@ -1,6 +1,6 @@
 function addNote(note, context) {
     addAction({
-        type: "add_note " + JSON.stringify(context),
+        type: JSON.stringify(context),
         note: note
     }, context);
 }
