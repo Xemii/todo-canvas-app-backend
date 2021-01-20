@@ -5,12 +5,10 @@ require: slotfilling/slotFilling.sc
 require: js/getters.js
 require: js/reply.js
 require: js/actions.js
-require: js/findItem.js
+require: js/findAccount.js
 
 # Подключение сценарных файлов
-require: scenario/addNote.sc
-require: scenario/doNote.sc
-require: scenario/deleteNote.sc
+require: scenario/unlockAccount.sc
 require: scenario/serverActions.sc
 
 
