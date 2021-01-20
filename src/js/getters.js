@@ -5,27 +5,15 @@ function getRequest(context) {
     return {};
 }
 
-function getSelectedItem(request) {
-    if (request &&
-        request.payload &&
-        request.payload.meta &&
-        request.payload.meta.current_app &&
-        request.payload.meta.current_app.state
-    ) {
-        return request.payload.selected_item;
-    }
-    return null;
-}
-
-function getItems(request) {
+function getAccounts(request) {
     if (request &&
         request.payload &&
         request.payload.meta &&
         request.payload.meta.current_app &&
         request.payload.meta.current_app.state &&
-        request.payload.meta.current_app.state.item_selector
+        request.payload.meta.current_app.state.account_selector
     ) {
-        return request.payload.meta.current_app.state.item_selector.items;
+        return request.payload.meta.current_app.state.account_selector.accounts;
     }
     return null;
 }
