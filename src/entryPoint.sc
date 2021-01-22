@@ -1,5 +1,10 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
+
+require: utils/reply.js
+require: utils/sendActionToClient.js
+
+require: actions/accountsState.js
   
 # Подключение сценарных файлов
 require: scenario/accountsState.sc
