@@ -4,3 +4,10 @@ function showMyAccountsList(context) {
         filter: 'all'
     }, context);
 }
+
+function showMyLockedAccountsList(context) {
+    sendActionToClient({
+        type: 'filter_accounts',
+        filter: 'locked'
+    })
+}
