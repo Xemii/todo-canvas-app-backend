@@ -1,5 +1,6 @@
 theme: /
 
+
     state: РазблокировкаАккаунтаПоНомеру
         q!: (~разблокировать|разблокируй) номер
             @duckling.number:: digit
@@ -12,5 +13,4 @@ theme: /
             )
             unlockAccount(itemId, $context);
 
-        buttons:
-            "Добавь запись выбросить мусор"
+        go!: /АккаунтРазблокирован

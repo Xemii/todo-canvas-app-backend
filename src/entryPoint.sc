@@ -9,6 +9,7 @@ require: js/findAccount.js
 
 # Подключение сценарных файлов
 require: scenario/unlockAccount.sc
+require: scenario/accountsState.sc
 require: scenario/serverActions.sc
 
 
