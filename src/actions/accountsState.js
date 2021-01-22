@@ -1,5 +1,5 @@
 function showMyAccountsList(context) {
-    addAction({
+    sendActionToClient({
         type: 'show_accounts'
     }, context);
 }
