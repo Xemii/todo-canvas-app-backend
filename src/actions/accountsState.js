@@ -9,5 +9,5 @@ function showMyLockedAccountsList(context) {
     sendActionToClient({
         type: 'filter_accounts',
         filter: 'locked'
-    }, context)
+    }, context);
 }
