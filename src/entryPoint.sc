@@ -40,4 +40,4 @@ theme: /
 
     state: Fallback
         event!: noMatch
-        a: Я не понимаю.
+        a: Я в приложении но ничего не понял
