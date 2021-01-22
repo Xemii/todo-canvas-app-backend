@@ -8,6 +8,6 @@ function showMyAccountsList(context) {
 function showMyLockedAccountsList(context) {
     sendActionToClient({
         type: 'filter_accounts',
-        filter: 'all'
+        filter: 'locked'
     }, context);
 }
