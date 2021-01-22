@@ -10,6 +10,6 @@ theme: /
     state: СписокЗаблокированныхАккаунтов
         q!: заблокированные записи
         script:
-            showMyAccountsList($context)
+            showMyLockedAccountsList($context)
         buttons:
             "Все записи"
