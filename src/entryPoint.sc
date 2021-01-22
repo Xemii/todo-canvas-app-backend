@@ -1,16 +1,8 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
   
-# Подключение javascript обработчиков
-require: js/getters.js
-require: js/reply.js
-require: js/actions.js
-require: js/findAccount.js
-
 # Подключение сценарных файлов
-require: scenario/unlockAccount.sc
 require: scenario/accountsState.sc
-require: scenario/serverActions.sc
 
 
 patterns:
