@@ -11,6 +11,6 @@ theme: /
     state: СписокЗаблокированныхАккаунтов
         q!: список заблокированных (учетных записей|учеток|аккаунтов)|заблокированные учетные записи
         script:
-            showMyLockedAccountsList($context)
+            showMyAccountsList($context)
         buttons:
             "Покажи список учеток"
