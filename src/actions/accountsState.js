@@ -1,5 +1,6 @@
 function showMyAccountsList(context) {
     sendActionToClient({
-        type: 'show_accounts'
+        type: 'filter_accounts',
+        filter: 'all'
     }, context);
 }
