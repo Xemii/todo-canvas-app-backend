@@ -35,7 +35,7 @@ theme: /
         a: Начнём!
         
         buttons:
-            "Покажи список учеток"
+            "Все записи"
 
 
     state: Fallback
