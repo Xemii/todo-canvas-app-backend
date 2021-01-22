@@ -33,6 +33,9 @@ theme: /
             $projectName
             
         a: Начнём!
+        
+        buttons:
+            "Покажи список учеток"
 
 
     state: Fallback
